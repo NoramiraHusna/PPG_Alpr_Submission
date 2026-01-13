@@ -89,6 +89,11 @@ What you will see:
 - Right Window: The Optimised model running the Smart Recovery logic.
 - Terminal Output: A final "Winner Report" showing the accuracy score and execution speed of both systems.
 
+## 📂 Dataset Download
+Due to GitHub file limits, the full dataset and other files (if in github unable to be downloaded) is hosted on Google Drive.
+
+👉 **[Download Test Dataset Here](https://drive.google.com/drive/folders/1INHbBDpmOSZfjqSTmkuSBwFgZ_Vjq8Eg?usp=sharing)**
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Methodology: The Innovation
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
