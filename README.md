@@ -40,7 +40,33 @@ pip install pandas==2.3.3
 ```
 Note: tkinter is usually included with Python. If you encounter an error regarding tk, ensure your Python installation includes Tcl/Tk support.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Folder Structure & Installation
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To ensure the scripts run correctly, organize your files exactly as shown below.
+1. Create a main folder (e.g., ALPR_Project).
+2. Create two sub-folders: model_base and model_optimised2.
+3. Download and save the respective python scripts and best.pt model files into their folders.
+
+Required Directory Structure:
+```
+ALPR_Project/
+│
+├── main_comparison.py          # <--- RUN THIS FILE for the Live Demo
+├── testpic_combine/            # Folder containing your test images
+│
+├── model_base/                 # Folder 1
+│   ├── main_base.py            # Baseline script
+│   └── best.pt                 # The trained YOLOv8n model
+│
+└── model_optimised2/           # Folder 2
+    ├── main_optimised2.py      # Smart logic script
+    └── best.pt                 # (Copy of the model if needed by standalone script)
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 How to Run the System
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 First run the Individual Systems
 - If you wish to run the systems separately:
