@@ -89,10 +89,18 @@ What you will see:
 - Right Window: The Optimised model running the Smart Recovery logic.
 - Terminal Output: A final "Winner Report" showing the accuracy score and execution speed of both systems.
 
-## 📂 Dataset Download
-Due to GitHub file limits, the full dataset and other files (if in github unable to be downloaded) is hosted on Google Drive.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dataset
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dataset is collected from:
+- manually at parking lot
+- from roboflow dataset
+- shopee car plate seller (from the review picture)
 
-👉 **[Download Test Dataset Here](https://drive.google.com/drive/folders/1INHbBDpmOSZfjqSTmkuSBwFgZ_Vjq8Eg?usp=sharing)**
+## 📂 Dataset Download Can be Downloaded here
+Due to GitHub file limits, the full dataset can be seen here and other files (if in github unable to be downloaded) is hosted on Google Drive.
+
+👉 **[Test Dataset is Here](https://drive.google.com/drive/folders/1INHbBDpmOSZfjqSTmkuSBwFgZ_Vjq8Eg?usp=sharing)**
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Methodology: The Innovation
@@ -118,6 +126,12 @@ We implemented a dynamic feedback loop that acts like a human turning on a flash
       - This "brightens" the details without washing out the image like simple brightness adjustments.
     4. Pass 2 (Retry): System scans the enhanced image.
     5. Result: Plates that were invisible to the Base model are successfully detected and read.
+  
+   ## Validation Strategy for Character Level Detection (Manual Verification): To ensure precise Character-Level Accuracy, we implemented a transparent auditing system:
+    (we had to do it manually since our model unable to detect the difference of the content of the cropped license plate and the output reading the license plate therefore;)
+
+   1. CSV Logging: All predictions vs. Ground Truth are automatically exported to CSV for manual side-by-side verification (overcoming automated scoring limitations).
+   2. Visual Backup: Annotated images are saved simultaneously to cross-reference the CSV data against visual evidence.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Performance Summary
@@ -131,3 +145,8 @@ Performance Summary
 | **Trade-off** | Faster (~0.73 FPS) | Slightly Slower (~0.65 FPS) |
 
 *The Smart System sacrifices a small amount of speed (milliseconds) to gain significantly higher reliability in security-critical scenarios.*
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Poster link
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Link:https://www.canva.com/design/DAG74f5wMqw/V6eltNAyOaRlTpjuZWkQJw/edit?utm_content=DAG74f5wMqw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
