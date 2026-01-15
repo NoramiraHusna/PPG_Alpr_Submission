@@ -128,7 +128,7 @@ We implemented a dynamic feedback loop that acts like a human turning on a flash
     5. Result: Plates that were invisible to the Base model are successfully detected and read.
   
    ## Validation Strategy for Character Level Detection (Manual Verification): To ensure precise Character-Level Accuracy, we implemented a transparent auditing system:
-    (we had to do it manually since our model unable to detect the difference of the content of the cropped license plate and the output reading the license plate therefore;)
+    (we had to do it manually since our model unable to detect the difference of the content of the cropped license plate and the output reading the license plate therefore;) ---csv file and comparison picture is shared in the dataset folder link previously in the 'base_vs_optimised' folder
 
    1. CSV Logging: All predictions vs. Ground Truth are automatically exported to CSV for manual side-by-side verification (overcoming automated scoring limitations).
    2. Visual Backup: Annotated images are saved simultaneously to cross-reference the CSV data against visual evidence.
